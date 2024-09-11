@@ -395,16 +395,16 @@ ssh_options='-q -o ConnectTimeout=10'	# Options to append to "ssh"
 #
 # For example, to use systemd, you can set
 #
-#    service_start_command = 'sudo systemctl start postgresql-9.6'
+#    service_start_command = 'sudo systemctl start postgresql-16'
 #    (...)
 #
 # and then use the following sudoers configuration:
 #
 #    # this is required when running sudo over ssh without -t:
 #    Defaults:postgres !requiretty
-#    postgres ALL = NOPASSWD: /usr/bin/systemctl stop postgresql-9.6, \
-#        /usr/bin/systemctl start postgresql-9.6, \
-#        /usr/bin/systemctl restart postgresql-9.6
+#    postgres ALL = NOPASSWD: /usr/bin/systemctl stop postgresql-16, \
+#        /usr/bin/systemctl start postgresql-16, \
+#        /usr/bin/systemctl restart postgresql-16
 #
 # Debian/Ubuntu users: use "sudo pg_ctlcluster" to execute service control commands.
 #
